@@ -70,7 +70,7 @@ export {
   ISellerDocument,
 } from './seller.interface';
 export { IEmailLocals } from './email.interface';
-export { upload, videoUpload } from '../cloudinary-upload';
+export { upload, videoUpload } from './cloudinary-upload';
 export {
   IError,
   IErrorResponse,
@@ -81,13 +81,13 @@ export {
   BadRequestError,
   NotFoundError,
   NotAuthorizedError,
-} from '../error-handler';
-export { verifyGatewayRequest } from '../gateway-middleware';
-export { winstonLogger } from '../logger';
+} from './error-handler';
+export { verifyGatewayRequest } from './gateway-middleware';
+export { winstonLogger } from './logger';
 export {
   firstLetterUppercase,
   lowerCase,
   toUpperCase,
   isDataURL,
   isEmail,
-} from '../helpers';
+} from './helpers';
