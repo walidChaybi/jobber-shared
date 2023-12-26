@@ -5,7 +5,7 @@ import cloudinary, {
 
 export function upload(
   file: string,
-  public_id: string,
+  public_id?: string,
   overwrite?: boolean,
   invalidate?: boolean
 ): Promise<UploadApiResponse | UploadApiErrorResponse | undefined> {
